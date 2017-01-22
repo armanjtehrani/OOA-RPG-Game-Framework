@@ -5,6 +5,8 @@
 #include <unordered_map>
 #include <memory>
 
+#include "Success.h"
+
 #include "CharacterManagerName.h"
 #include "CharacterManagementSystem.h"
 
@@ -23,11 +25,18 @@ public:
 	~CharacterManager();
 	
 	//
-	auto hasManager(CharacterManager) const->bool;
+	auto hasManager(CharacterManagerName) const->bool;
 
 	auto getManager(CharacterManagerName) const->std::weak_ptr<CharacterManagementSystem>;
 
-	auto getAllManagers() const->std::unordered_map<CharacterManagerName, std::weak_ptr<CharacterManagementSystem>>;
+	auto getAllManagers() const->
+		std::unordered_map<CharacterManagerName, std::weak_ptr<CharacterManagementSystem>>;
+
+	auto addManager(std::weak_ptr<CharacterManagementSystem>)->void;
+
+	auto deleteManager(CharacterManagerName)->Success;
+
+	auto clearAllManagers()->void;
 };
 
 #endif // !RPG_CHARACTER_MANAGER_H_

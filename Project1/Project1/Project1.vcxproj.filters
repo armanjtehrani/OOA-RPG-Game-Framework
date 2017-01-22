@@ -43,6 +43,12 @@
     <Filter Include="Source Files\GameManager">
       <UniqueIdentifier>{c3e4dc30-b5f8-4ede-b2ce-c62a38abd5da}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Tool">
+      <UniqueIdentifier>{00d7e89b-80ab-4fcb-bfdd-d60d48b0f7fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tool">
+      <UniqueIdentifier>{4b2ebb67-62fe-4c93-b925-7497d4016fc9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h">
@@ -81,6 +87,12 @@
     <ClInclude Include="Success.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Tool.h">
+      <Filter>Header Files\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolSpec.h">
+      <Filter>Header Files\Tool</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -100,6 +112,12 @@
     </ClCompile>
     <ClCompile Include="GameManager.cpp">
       <Filter>Source Files\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool.cpp">
+      <Filter>Source Files\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolSpec.cpp">
+      <Filter>Source Files\Tool</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

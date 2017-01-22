@@ -123,6 +123,8 @@
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="HandlerName.h" />
     <ClInclude Include="Success.h" />
+    <ClInclude Include="Tool.h" />
+    <ClInclude Include="ToolSpec.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BasicCharacterBlockingSystem.cpp" />
@@ -131,6 +133,8 @@
     <ClCompile Include="CharacterToGameManagerRequest.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Tool.cpp" />
+    <ClCompile Include="ToolSpec.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
