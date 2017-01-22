@@ -4,6 +4,7 @@
 int main()
 {
 	auto t = std::make_shared<GameManager>();
-	Character a(t);
+	Character a;
+	a.setMainGameManager(t);
 	return 0;
 }
