@@ -13,5 +13,93 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Character">
+      <UniqueIdentifier>{81953614-3c77-484f-ab36-e50e8f06f2fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character">
+      <UniqueIdentifier>{c30603cb-3870-45fb-a4ce-65cc7b465dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Character\CharacterManager">
+      <UniqueIdentifier>{cd4c8b81-ac52-4bc5-8ff6-41a4dd90a927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\CharacterManager">
+      <UniqueIdentifier>{a9774885-efcb-47d9-a430-01ea468dfc7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Character\CharacterBlockingSystem">
+      <UniqueIdentifier>{9f4c071f-65ce-4bbb-bcf4-5e23c9539eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Character\CharacterRequest">
+      <UniqueIdentifier>{dbca8dfb-896e-4b2c-aa4e-bf10de0dd101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameManager">
+      <UniqueIdentifier>{28c1bbb3-52be-4ef6-a3e4-7a8d32e8b0c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\CharacterBlockingSystem">
+      <UniqueIdentifier>{3d84992d-05ef-4172-b83d-02b1177ba829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character\CharacterRequest">
+      <UniqueIdentifier>{c969cab5-99c2-4133-9021-5af2ae3802a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameManager">
+      <UniqueIdentifier>{c3e4dc30-b5f8-4ede-b2ce-c62a38abd5da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Character.h">
+      <Filter>Header Files\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterManager.h">
+      <Filter>Header Files\Character\CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterManagerName.h">
+      <Filter>Header Files\Character\CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterBlockingSystem.h">
+      <Filter>Header Files\Character\CharacterBlockingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicCharacterBlockingSystem.h">
+      <Filter>Header Files\Character\CharacterBlockingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterRequest.h">
+      <Filter>Header Files\Character\CharacterRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterRequestType.h">
+      <Filter>Header Files\Character\CharacterRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterToGameManagerRequest.h">
+      <Filter>Header Files\Character\CharacterRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="HandlerName.h">
+      <Filter>Header Files\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterManagementSystem.h">
+      <Filter>Header Files\Character\CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Success.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Source Files\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterManager.cpp">
+      <Filter>Source Files\Character\CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicCharacterBlockingSystem.cpp">
+      <Filter>Source Files\Character\CharacterBlockingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterToGameManagerRequest.cpp">
+      <Filter>Source Files\Character\CharacterRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\GameManager</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

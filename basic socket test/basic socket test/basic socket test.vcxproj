@@ -19,10 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A8326952-474A-495A-BCBB-566EE6023FFF}</ProjectGuid>
-    <RootNamespace>Project1</RootNamespace>
+    <ProjectGuid>{5FF2FA0E-BEC7-4CD6-A9AA-44A830D7016D}</ProjectGuid>
+    <RootNamespace>basicsockettest</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>OOA RPG Game Framework</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -111,26 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BasicCharacterBlockingSystem.h" />
-    <ClInclude Include="Character.h" />
-    <ClInclude Include="CharacterBlockingSystem.h" />
-    <ClInclude Include="CharacterManagementSystem.h" />
-    <ClInclude Include="CharacterManager.h" />
-    <ClInclude Include="CharacterManagerName.h" />
-    <ClInclude Include="CharacterRequest.h" />
-    <ClInclude Include="CharacterRequestType.h" />
-    <ClInclude Include="CharacterToGameManagerRequest.h" />
-    <ClInclude Include="GameManager.h" />
-    <ClInclude Include="HandlerName.h" />
-    <ClInclude Include="Success.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BasicCharacterBlockingSystem.cpp" />
-    <ClCompile Include="Character.cpp" />
-    <ClCompile Include="CharacterManager.cpp" />
-    <ClCompile Include="CharacterToGameManagerRequest.cpp" />
-    <ClCompile Include="GameManager.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="socket.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

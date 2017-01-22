@@ -1,0 +1,13 @@
+#ifndef RGB_HANDLER_NAME_H_
+#define RGB_HANDLER_NAME_H_
+
+
+enum class HandlerName
+{
+	NONE,
+	FIGHT_REQUEST_HANDLER,
+	FIGHT_HANDLER,
+	DESCREAT_MAP_HANDLER
+};
+
+#endif // !RGB_HANDLER_NAME_H_

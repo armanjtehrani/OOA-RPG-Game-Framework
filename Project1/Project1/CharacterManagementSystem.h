@@ -1,0 +1,11 @@
+#ifndef RPG_CHARACTER_MANAGEMENT_SYSTEM_H_
+#define RPG_CHARACTER_MANAGEMENT_SYSTEM_H_
+
+
+class CharacterManagementSystem
+{
+
+};
+
+
+#endif // !RPG_CHARACTER_MANAGEMENT_SYSTEM_H_
