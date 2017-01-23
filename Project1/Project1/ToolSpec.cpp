@@ -1,11 +1,12 @@
 #include "ToolSpec.h"
 
+
 ToolSpec::ToolSpec()
 {
 	partIAffect = CharacterManagerName::NONE;
 }
 
-auto ToolSpec::getCharacterManagerIAffect() -> CharacterManagerName
+auto ToolSpec::getCharacterManagerIAffect() const-> CharacterManagerName
 {
 	return partIAffect;
 }
@@ -15,7 +16,7 @@ auto ToolSpec::setCharacterManagerIAffect(CharacterManagerName char_man) -> void
 	partIAffect = char_man;
 }
 
-auto ToolSpec::getAllSpecs() -> std::unordered_map<std::string, std::string>
+auto ToolSpec::getAllSpecs() const-> const std::unordered_map<std::string, std::string>&
 {
 	return specs;
 }
@@ -25,9 +26,9 @@ auto ToolSpec::setAllSpecs(std::unordered_map<std::string, std::string> entry_sp
 	specs = entry_specs;
 }
 
-auto ToolSpec::getSpec(std::string key) -> std::string
+auto ToolSpec::getSpec(std::string key) const-> std::string
 {
-	return specs[key];
+	return specs.at(key);
 }
 
 auto ToolSpec::setSpec(std::string key, std::string val) -> void
@@ -37,3 +38,11 @@ auto ToolSpec::setSpec(std::string key, std::string val) -> void
 	else
 		specs.insert({ key, val });
 }
+
+auto ToolSpec::operator==(const ToolSpec& t) const-> bool
+{
+	if (specs == t.getAllSpecs())
+		return true;
+	return false;
+}
+

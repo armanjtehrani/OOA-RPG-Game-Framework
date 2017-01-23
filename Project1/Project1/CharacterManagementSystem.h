@@ -16,19 +16,29 @@ class CharacterManagementSystem
 	//attributes
 private:
 	CharacterManagerName myName;
-	std::vector<std::weak_ptr<ToolSpec>> myToolSpecs;
+	std::vector<std::shared_ptr<ToolSpec>> myToolSpecs;
 
 
 	//
-private:
-	virtual auto setMyName()->void;
+protected:
+	virtual auto setMyName()->void = 0;
 
 public:
+	CharacterManagementSystem();
+
 	auto getMyName()->CharacterManagerName;
 	
 public:
-	virtual auto useTool(std::weak_ptr<ToolSpec>)->void;
-	virtual auto unuseTool(std::weak_ptr<ToolSpec>)->Success;
+	auto useTool(std::shared_ptr<ToolSpec>)->void;
+	auto unuseTool(std::shared_ptr<ToolSpec>)->Success;
+
+protected:
+	auto addToolSpecToMyToolSpecs(std::shared_ptr<ToolSpec>) -> void;
+	auto removeToolSpecFromMyToolSpecs(std::shared_ptr<ToolSpec>) -> Success;
+	
+	virtual auto addSpecToMe(std::shared_ptr<ToolSpec>) -> void = 0;
+	virtual auto removeSpecFromMe(std::shared_ptr<ToolSpec>) -> void = 0;
+
 };
 
 

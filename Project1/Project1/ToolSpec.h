@@ -12,7 +12,7 @@
 class ToolSpec
 {
 	//
-private:
+protected:
 	CharacterManagerName partIAffect;
 	std::unordered_map<std::string, std::string> specs;
 
@@ -20,13 +20,14 @@ private:
 public:
 	ToolSpec();
 
-	auto getCharacterManagerIAffect()->CharacterManagerName;
+	auto getCharacterManagerIAffect() const->CharacterManagerName;
 	auto setCharacterManagerIAffect(CharacterManagerName)->void;
-	auto getAllSpecs()->std::unordered_map<std::string, std::string>;
+	auto getAllSpecs() const->const std::unordered_map<std::string, std::string>&;
 	auto setAllSpecs(std::unordered_map<std::string, std::string>)->void;
-	auto getSpec(std::string)->std::string;
+	auto getSpec(std::string) const->std::string;
 	auto setSpec(std::string, std::string)->void;
 
+	auto operator==(const ToolSpec& t) const->bool;
 };
 
 #endif // !RPG_TOOL_SPEC_H_
