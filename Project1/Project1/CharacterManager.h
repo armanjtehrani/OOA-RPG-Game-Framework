@@ -32,7 +32,7 @@ public:
 	auto getAllManagers() const->
 		std::unordered_map<CharacterManagerName, std::weak_ptr<CharacterManagementSystem>>;
 
-	auto addManager(std::weak_ptr<CharacterManagementSystem>)->void;
+	auto addManager(std::weak_ptr<CharacterManagementSystem>)->Success;
 
 	auto deleteManager(CharacterManagerName)->Success;
 
