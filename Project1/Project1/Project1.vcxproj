@@ -120,6 +120,7 @@
     <ClInclude Include="CharacterRequest.h" />
     <ClInclude Include="CharacterRequestType.h" />
     <ClInclude Include="CharacterToGameManagerRequest.h" />
+    <ClInclude Include="GameComponentManager.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="HandlerName.h" />
     <ClInclude Include="Success.h" />
@@ -132,6 +133,7 @@
     <ClCompile Include="CharacterManagementSystem.cpp" />
     <ClCompile Include="CharacterManager.cpp" />
     <ClCompile Include="CharacterToGameManagerRequest.cpp" />
+    <ClCompile Include="GameComponentManager.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Tool.cpp" />

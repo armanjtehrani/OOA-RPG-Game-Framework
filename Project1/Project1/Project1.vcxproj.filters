@@ -93,6 +93,9 @@
     <ClInclude Include="ToolSpec.h">
       <Filter>Header Files\Tool</Filter>
     </ClInclude>
+    <ClInclude Include="GameComponentManager.h">
+      <Filter>Header Files\GameManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -119,8 +122,11 @@
     <ClCompile Include="ToolSpec.cpp">
       <Filter>Source Files\Tool</Filter>
     </ClCompile>
+    <ClCompile Include="GameComponentManager.cpp">
+      <Filter>Source Files\GameManager</Filter>
+    </ClCompile>
     <ClCompile Include="CharacterManagementSystem.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Character\CharacterManager</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

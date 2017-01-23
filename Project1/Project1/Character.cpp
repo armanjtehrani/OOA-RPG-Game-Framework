@@ -6,6 +6,7 @@ Character::Character()
 {
 	myBlockingSystem = std::make_unique<BasicCharacterBlockingSystem>();
 	myManager = std::make_shared<CharacterManager>();
+	mainGameManager = std::weak_ptr<GameManager>();
 }
 
 
@@ -15,7 +16,7 @@ Character::~Character()
 
 auto Character::setMainGameManager(std::weak_ptr<GameManager>new_game_manager) -> void
 {
-	mainGameManager = new_game_manager;
+	mainGameManager = new_game_manager.lock();
 }
 
 auto Character::getMainGameManager() -> std::weak_ptr<GameManager>

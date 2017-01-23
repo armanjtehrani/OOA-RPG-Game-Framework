@@ -52,7 +52,10 @@ public:
 public:
 	auto setRequest(std::shared_ptr<CharacterRequest>)->Success;
 private:
-	auto packRequest(std::shared_ptr<CharacterRequest>)->std::shared_ptr<CharacterToGameManagerRequest>;
+	auto packRequest(std::shared_ptr<CharacterRequest>)
+		->std::shared_ptr<CharacterToGameManagerRequest>;
+
+
 	auto sendRequestToGameManager(std::shared_ptr<CharacterToGameManagerRequest>)->Success;
 };
 
